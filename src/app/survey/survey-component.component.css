@@ -1,0 +1,77 @@
+/* Contenitore principale del sondaggio */
+.survey-container {
+    max-width: 800px;
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
+    padding: 20px;
+    background-color: #f9f9f9; /* Sfondo chiaro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effetto di ombra */
+  }
+  
+  /* Titolo del sondaggio */
+  .survey-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Styling per le domande */
+  .survey-question {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Risposte del sondaggio (come radio buttons o checkboxes) */
+  .survey-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .survey-option input {
+    margin-right: 10px;
+  }
+  
+  /* Bottone per inviare il sondaggio */
+  .survey-submit-button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff; /* Colore primario (blu) */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .survey-submit-button:hover {
+    background-color: #0056b3; /* Colore più scuro al passaggio del mouse */
+  }
+  
+  /* Layout responsivo */
+  @media (max-width: 768px) {
+    .survey-container {
+      padding: 15px;
+    }
+  
+    .survey-title {
+      font-size: 20px;
+    }
+  
+    .survey-question {
+      font-size: 16px;
+    }
+  
+    .survey-submit-button {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,91 @@
+/* Intestazione */
+.app-header {
+    background-color: #545454; /* Colore blu per l'intestazione */
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera sotto l'intestazione */
+  }
+  
+  .app-title {
+    margin: 0;
+    font-size: 26px; /* Dimensione del font più grande */
+    font-weight: bold;
+  }
+  
+  /* Navigazione del menu */
+  .app-nav ul {
+    list-style-type: none; /* Rimuove i puntini dall'elenco */
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center; /* Centra gli elementi nel menu */
+  }
+  
+  .app-nav ul li {
+    margin: 0 15px; /* Spazio tra le voci del menu */
+  }
+  
+  .app-nav ul li a {
+    color: rgb(0, 0, 0); /* Colore bianco per i link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .app-nav ul li a:hover {
+    text-decoration: underline; /* Sottolinea i link al passaggio del mouse */
+    color: #e0e0e0; /* Cambia colore al passaggio del mouse */
+  }
+  
+  /* Contenitore principale dei contenuti */
+  .app-content {
+    padding: 20px;
+    min-height: calc(100vh - 160px); /* Altezza minima dinamica in base al footer e all'intestazione */
+    background-color: #f5f5f5; /* Sfondo leggermente grigio per il contenuto */
+  }
+  
+  /* Footer */
+  .app-footer {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0; /* Mantiene il footer fisso in basso */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera sopra il footer */
+    font-size: 14px;
+  }
+  
+  /* Stile per pulsanti globali (opzionale, se usi pulsanti generici) */
+  button {
+    background-color: #007bff; /* Colore blu */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Colore più scuro al passaggio del mouse */
+  }
+  
+  /* Layout responsivo */
+  @media (max-width: 768px) {
+    .app-nav ul {
+      flex-direction: column; /* Disposizione verticale del menu sui dispositivi mobili */
+      align-items: center;
+    }
+  
+    .app-nav ul li {
+      margin-bottom: 10px; /* Aggiunge spazio tra le voci del menu */
+    }
+  
+    .app-title {
+      font-size: 22px; /* Riduce il titolo sui dispositivi mobili */
+    }
+  }
+  

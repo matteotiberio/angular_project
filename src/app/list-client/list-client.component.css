@@ -1,0 +1,93 @@
+/* Contenitore principale */
+.client-list-container {
+    width: 90%;
+    margin: 20px auto; /* Centra il contenuto orizzontalmente */
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Titolo della lista */
+  .client-list-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabella dei clienti */
+  .client-table {
+    width: 100%;
+    border-collapse: collapse; /* Rimuove lo spazio tra i bordi delle celle */
+    background-color: #fff;
+  }
+  
+  .client-table th, .client-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Bordi inferiori sottili */
+  }
+  
+  .client-table th {
+    background-color: #007bff; /* Colore blu per l'intestazione */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .client-table tr:hover {
+    background-color: #f1f1f1; /* Cambia colore al passaggio del mouse */
+  }
+  
+  .client-table td {
+    color: #555; /* Colore del testo per i dati */
+  }
+  
+  /* Pulsante di azione (modifica, cancella, ecc.) */
+  .action-button {
+    background-color: #28a745; /* Colore verde */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .action-button:hover {
+    background-color: #218838; /* Verde più scuro al passaggio del mouse */
+  }
+  
+  .delete-button {
+    background-color: #dc3545; /* Colore rosso per cancellare */
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333; /* Rosso più scuro al passaggio del mouse */
+  }
+  
+  /* Stile responsivo per dispositivi mobili */
+  @media (max-width: 768px) {
+    .client-list-container {
+      width: 100%;
+      margin: 10px auto;
+      padding: 15px;
+    }
+  
+    .client-table th, .client-table td {
+      padding: 10px 8px;
+      font-size: 14px;
+    }
+  
+    .client-list-title {
+      font-size: 20px;
+    }
+  
+    .action-button {
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }
+  

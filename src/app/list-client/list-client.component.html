@@ -1,0 +1,36 @@
+<div class="client-list-container">
+    <!-- Titolo della lista dei clienti -->
+    <h2 class="client-list-title">Lista Clienti</h2>
+  
+    <!-- Tabella dei clienti -->
+    <table class="client-table">
+      <thead>
+        <tr>
+          <th>ID Cliente</th>
+          <th>Nome</th>
+          <th>Email</th>
+          <th>Telefono</th>
+          <th>Azioni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Dati di esempio, da sostituire con dati dinamici in Angular -->
+        <tr *ngFor="let client of clients">
+          <td>{{ client.id }}</td>
+          <td>{{ client.name }}</td>
+          <td>{{ client.email }}</td>
+          <td>{{ client.phone }}</td>
+          <td>
+            <!-- Pulsante Modifica -->
+            <button class="action-button" (click)="editClient(client.id)">Modifica</button>
+            <!-- Pulsante Cancella -->
+            <button class="action-button delete-button" (click)="deleteClient(client.id)">Cancella</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+<!-- Messaggio se non ci sono clienti -->
+<p *ngIf="clients.length === 0">Nessun cliente trovato.</p>
+</div>
+  
